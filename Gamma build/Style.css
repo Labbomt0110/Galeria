@@ -1,0 +1,154 @@
+body {
+    background-image: url(https://www.creativefabrica.com/wp-content/uploads/2022/03/14/Wood-Texture-Graphics-27181890-1-580x387.jpg);
+    margin: 0;
+    
+}
+
+div {
+    animation: rgb 5s infinite;
+    border: 7.5px solid transparent;
+    border-bottom: 40px solid transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+:root{
+    --ohno: 100%;
+}
+@keyframes rgb {
+    0% {
+        border-color: cyan;
+    }
+
+    25% {
+        border-color: rgb(72, 0, 255);
+    }
+
+    50% {
+        border-color: rgb(204, 0, 255);
+    }
+
+    75% {
+        border-color: rgb(72, 0, 255);
+    }
+
+    100% {
+        border-color: cyan;
+    }
+}
+
+.animatio{
+    transition: 0.5s transform;
+    background-image: url(https://i.ytimg.com/vi/1iIXx55Orwg/maxresdefault.jpg);
+    background-size: cover;
+    animation: rgb 5s infinite;
+    background-color: black;
+}
+.animatio:hover{
+    transform: scale(1.03);
+    animation: rgb_butbetter 2.5s infinite;
+}
+@keyframes rgb_butbetter{
+
+    0%,100% {
+        border-color: rgb(255, 55, 0);
+    }
+
+    25%,75% {
+        border-color: rgb(255, 123, 0);
+    }
+
+    50% {
+        border-color: rgb(255, 170, 0);
+    }
+
+
+}
+#Masterbait {
+    width: 150%;
+    height: 70%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 50px;
+    column-gap: 25px;
+    border: none;
+    margin: 1px;
+    animation: duofo 7.5s infinite alternate ease-in-out;
+}
+#Masterbait:hover{
+    animation-play-state: paused;
+}
+#MASTEROFBAIT{
+ overflow: hidden;
+ height: 85.4vh;
+ width: 197.9vh;
+ padding-top: 50px;
+ border: none;
+}
+
+@keyframes duofo{
+    from{
+        margin-left: 10%;
+    }
+    to{
+        margin-left: calc(-0.5*var(--ohno));
+    }
+    }
+#div1 { 
+    grid-area: 1 / 1 / 2 / 2; 
+    transform: rotate(10deg);
+    width: 275px;
+    height: 250px;
+    background-image: url(//i.pinimg.com/originals/e5/47/6e/e5476eec7ccd2de2782fc882ac6e9543.png)
+}
+#div2 { 
+    grid-area: 2 / 1 / 3 / 2; 
+    background-image: url(https://i1.sndcdn.com/artworks-LQGc7ggDzPnlb1t8-56dCAQ-t500x500.jpg);
+    width: 250px;
+    height: 225px;
+    transform: rotate(-5deg) translate(70px, -40px);
+}
+#div3 { 
+    grid-area: 2 / 2 / 3 / 3;
+    background-image: url(https://i1.sndcdn.com/artworks-ouQudmPc2vcldDwK-1JHYqw-t500x500.jpg);
+    width: 350px;
+    height: 250px;
+    transform: rotate(-5deg) translate(70px, -70px);
+}
+#div4 { 
+    grid-area: 1 / 2 / 2 / 3; 
+
+    background-image: url(https://pbs.twimg.com/media/FO-p0iNXIAoaN_O.png);
+    width: 350px;
+    height: 250px;
+    transform: rotate(-3deg) translate(-30px, -20px);
+}
+#div5 { 
+    grid-area: 1 / 3 / 2 / 4; 
+    background-image: url(https://www.indy100.com/media-library/we-live-we-love-we-lie.jpg?id=39753962&width=1245&height=700&quality=85&coordinates=0%2C0%2C0%2C0);
+    width: 350px;
+    height: 250px;
+    transform: rotate(-3deg) translate(-30px, -20px);
+}
+#div6 { 
+    grid-area: 2 / 3 / 3 / 4; 
+    background-image: url(mokey.png);
+    width: 250px;
+    height: 225px;
+    transform: rotate(3deg) translate(30px, -40px);
+}
+#div7 { 
+    grid-area: 2 / 4 / 3 / 5; 
+    background-image: url(https://imageproxy.ifunny.co/resize:640x,quality:90x75/images/56a56ddb82a2d46f321789c84253ed2c77a6ca45927b5e51327cd33b1b2a67d4_3.jpg);
+    width: 300px;
+    height: 300px;
+    transform: rotate(-7.5deg) translate(-130px, -130px);
+}
+#div8 { 
+    grid-area: 1 / 4 / 2 / 5; 
+    background-image: url(https://i.ytimg.com/vi/8cbW3QcYLFk/maxresdefault.jpg);
+    width: 300px;
+    height: 275px;
+    transform: rotate(7deg) translate(165px, -40px);
+}
