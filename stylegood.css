@@ -1,5 +1,15 @@
-a{
-    margin-top: 100px;
+:root {
+    --color30336b: #bb1919;
+    --colorReder: #d80606;
+    --colorHollowpurple:#8a00b4;
+    --colorHollowerpurple:rgb(195, 0, 255)b4;
+    --colorGrey:rgb(87,87,87);
+    --colorSacrebleueu: #092b92;
+    --colorSacrecyanu: #1344d4;
+}
+@font-face {
+    font-family: fafas;
+    src: url(Ubuntu-Bold.ttf);
 }
 body{
     background-image: url(imagem_2023-10-09_104247223_scaled_6x_pngcrushed.png);
@@ -12,13 +22,125 @@ body{
     grid-template-rows: 1fr;
     gap: 20px;
 }
+#bad  span {
+    animation-name: luz;
+    animation-duration: 2.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+
+
+}
+#mediocre span{
+    animation-name: luz2;
+    animation-duration: 2.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+
+}
+#average span{
+    animation-name: luz3;
+    animation-duration: 2.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+span:nth-of-type(2) {
+    animation-delay: 0.25s;
+
+}
+
+span:nth-of-type(3) {
+    animation-delay: 0.50s;
+
+}
+
+@keyframes luz {
+    0%,100% {
+        color: rgb(255, 255, 255);
+        text-shadow: 0 0 15px var(--color30336b),
+            0 0 55px var(--color30336b),
+            0 0 105px var(--color30336b);
+    }
+    30%,70%{
+        color: rgb(255, 255, 255);
+        text-shadow: 0 0 15px var(--colorReder),
+            0 0 55px var(--colorReder),
+            0 0 105px var(--colorReder);
+    }
+    50% {
+        color: var(--colorGrey);
+        text-shadow: none;
+    }    
+}
+
+@keyframes luz2 {
+    0%,100% {
+        color: rgb(255, 255, 255);
+        text-shadow: 0 0 15px var(--colorSacrebleueu),
+            0 0 55px var(--colorSacrebleueu),
+            0 0 105px var(--colorSacrebleueu);
+    }
+    30%,70%{
+        color: rgb(255, 255, 255);
+        text-shadow: 0 0 15px var(--colorSacrecyanu),
+            0 0 55px var(--colorSacrecyanu),
+            0 0 105px var(--colorSacrecyanu);
+    }
+    50% {
+        color: var(--colorGrey);
+        text-shadow: none;
+    }
+}
+
+@keyframes luz3 {
+    0%,100% {
+        color: rgb(255, 255, 255);
+        text-shadow: 0 0 15px var(--colorHollowpurple),
+            0 0 55px var(--colorHollowpurple),
+            0 0 105px var(--colorHollowpurple);
+    }
+    30%,70%{
+        color: rgb(255, 255, 255);
+        text-shadow: 0 0 15px var(--colorHollowerpurple),
+            0 0 55px var(--colorHollowerpurple),
+            0 0 105px var(--colorHollowerpurple);
+    }
+    50% {
+        color: var(--colorGrey);
+        text-shadow: none;
+    }
+}
+
 div{
     height: 150px;
     width: 250px;
     border-radius: 10px;
-    border: 5px rgb(28, 22, 113) solid;
+    border: 5px rgb(0, 34, 82) solid;
     position: relative;
     top: 175%;
     left: 22.5%;
     text-align: center;
+    background-color: #020202;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: fafas;
+}
+div:hover{
+    animation: slide 10s linear;
+}
+a{
+
+    text-decoration: none;
+    font-style: italic;
+    color: #2a042f;
+    font-size: 40px;
+}
+#bad{
+    border-color: #ba0303;
+}
+#mediocre{
+    border-color: #1048f0;
+}
+#average{
+    border-color: #781d94;
 }
