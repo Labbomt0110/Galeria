@@ -1,3 +1,24 @@
 a{
-    margin: 10px ;
+    margin-top: 100px;
+}
+body{
+    background-image: url(imagem_2023-10-09_104247223_scaled_6x_pngcrushed.png);
+    background-size: 102%;
+    background-repeat: no-repeat; 
+    background-position: -20px -10px; 
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    gap: 20px;
+}
+div{
+    height: 150px;
+    width: 250px;
+    border-radius: 10px;
+    border: 5px rgb(28, 22, 113) solid;
+    position: relative;
+    top: 175%;
+    left: 22.5%;
+    text-align: center;
 }
